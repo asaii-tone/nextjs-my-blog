@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
-import Date from "../../components/date";
-import utilStyles from "../../styles/utils.module.css";
+import Layout from "../../../components/layout";
+import { getTechPostIds, getTechPostData } from "../../../lib/posts";
+import Date from "../../../components/date";
+import utilStyles from "../../../styles/utils.module.css";
 
 export default function Post({ postData }) {
   return (
@@ -21,7 +21,7 @@ export default function Post({ postData }) {
   );
 }
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getTechPostIds();
   return {
     paths,
     fallback: false,
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 }
 export async function getStaticProps({ params }) {
   // "await" キーワードを以下のように追加する
-  const postData = await getPostData(params.id);
+  const postData = await getTechPostData(params.id);
 
   return {
     props: {

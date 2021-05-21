@@ -1,19 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
-import Date from "../components/date";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedTechPostsData } from "../lib/posts";
+import Date from "../../components/date";
+import Layout, { siteTitle } from "../../components/layout";
+import utilStyles from "../../styles/utils.module.css";
+import { getSortedHobbyPostsData } from "../../lib/posts";
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Link href="/posts/tech">
-        <a>TechBlog</a>
-      </Link>
-      <Link href="/posts/hobby">
-        <a>HobbyBlog</a>
-      </Link>
       <Head>…</Head>
       <section className={utilStyles.headingMd}>…</section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -21,7 +15,7 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/tech/${id}`}>
+              <Link href={`/posts/hobby/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
@@ -37,7 +31,7 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedTechPostsData();
+  const allPostsData = getSortedHobbyPostsData();
   return {
     props: {
       allPostsData,
