@@ -9,7 +9,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Link href="/posts/tech">
-        <a>TechBlog</a>
+        <a className="text-red-400  text-5xl">TechBlog</a>
       </Link>
       <Link href="/posts/hobby">
         <a>HobbyBlog</a>
