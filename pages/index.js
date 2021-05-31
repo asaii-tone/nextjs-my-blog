@@ -4,16 +4,12 @@ import DateFormat from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedAllPostsData } from "../lib/posts";
+import { Navibar } from "../components/Navigation";
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Link href="/posts/tech">
-        <a className="text-red-400  text-5xl">TechBlog</a>
-      </Link>
-      <Link href="/posts/hobby">
-        <a>HobbyBlog</a>
-      </Link>
+      <Navibar />
       <Head>…</Head>
       <section className={utilStyles.headingMd}>…</section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
