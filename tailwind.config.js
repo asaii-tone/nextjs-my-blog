@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    colors: {
+      "uirow-pink": "#e8aaa3",
+    },
   },
   variants: {
     extend: {},
