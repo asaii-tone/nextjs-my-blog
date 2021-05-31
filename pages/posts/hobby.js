@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 import DateFormat from "../../components/date";
-import Layout, { siteTitle } from "../../components/layout";
 import utilStyles from "../../styles/utils.module.css";
 import { getSortedHobbyPostsData } from "../../lib/posts";
+import Layout, { siteTitle } from "../../components/layout";
 
-export default function Home({ allPostsData }) {
+export default function HobbyHome({ allPostsData }) {
   return (
     <Layout home>
       <Head>…</Head>

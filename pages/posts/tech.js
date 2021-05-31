@@ -5,7 +5,7 @@ import Layout, { siteTitle } from "../../components/layout";
 import utilStyles from "../../styles/utils.module.css";
 import { getSortedTechPostsData } from "../../lib/posts";
 
-export default function Home({ allPostsData }) {
+export default function TechHome({ allPostsData }) {
   return (
     <Layout home>
       <Head>…</Head>
