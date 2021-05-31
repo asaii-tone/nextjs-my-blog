@@ -1,4 +1,14 @@
-.heading2Xl {
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-custom-pink {
+    background-color: #e8aaa3;
+  }
+} */
+
+/* .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
   font-weight: 800;
@@ -49,4 +59,4 @@
 
 .lightText {
   color: #999;
-}
+} */

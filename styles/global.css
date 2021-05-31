@@ -1,7 +1,14 @@
-@import "~tailwindcss/base";
-@import "~tailwindcss/components";
-@import "~tailwindcss/utilities";
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-custom-pink {
+    background-color: #e8aaa3;
+  }
+}
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -27,4 +34,4 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
-}
+} */
