@@ -12,31 +12,44 @@ export default function Home({ allPostsData }) {
     <div>
       <Header />
       <Navibar />
-      <ArticleListLayout>
-        <section className={utilStyles.headingMd}>…</section>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
-          <ul className={utilStyles.list}>
+      <div className="container mx-auto">
+        <section className="">インデックスページ</section>
+        <section className="">
+          <h2 className="">Blog</h2>
+          <ul className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-4">
+            {/* 記事を表示する */}
             {allPostsData.map(({ id, blogFlag, date, title }) => (
-              <li className={utilStyles.listItem} key={id}>
-                {blogFlag ? (
-                  <Link href={`/posts/tech/${id}`}>
-                    <a>aa{title}</a>
-                  </Link>
-                ) : (
-                  <Link href={`/posts/hobby/${id}`}>
-                    <a>uu{title}</a>
-                  </Link>
-                )}
-                <br />
-                <small className={utilStyles.lightText}>
-                  <DateFormat dateString={date} />
-                </small>
-              </li>
+              <div
+                className="w-auto h-auto overflow-hidden rounded-md shadow-md "
+                key={id}
+              >
+                <img
+                  className="object-contain w-auto h-52"
+                  src="/images/sample.jpg"
+                  alt={id}
+                ></img>
+                <div>
+                  <li className="ml-2" key={id}>
+                    {blogFlag ? (
+                      <Link href={`/posts/tech/${id}`}>
+                        <a>aa{title}</a>
+                      </Link>
+                    ) : (
+                      <Link href={`/posts/hobby/${id}`}>
+                        <a>uu{title}</a>
+                      </Link>
+                    )}
+                    <br />
+                    <small className="">
+                      <DateFormat dateString={date} />
+                    </small>
+                  </li>
+                </div>
+              </div>
             ))}
           </ul>
         </section>
-      </ArticleListLayout>
+      </div>
     </div>
   );
 }

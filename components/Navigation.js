@@ -6,12 +6,12 @@ export function Navibar() {
       <ul className="flex flex-nowrap justify-center grid gap-4 grid-cols-2">
         <li className="text-center">
           <Link href="/posts/tech">
-            <a className="hover:text-uirow-pink">TechBlog</a>
+            <a className="hover:text-uiro-pink">TechBlog</a>
           </Link>
         </li>
         <li className="text-center">
           <Link href="/posts/hobby">
-            <a className="hover:text-uirow-pink">HobbyBlog</a>
+            <a className="hover:text-uiro-pink">HobbyBlog</a>
           </Link>
         </li>
       </ul>

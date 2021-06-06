@@ -13,7 +13,7 @@ export default function TechHome({ allPostsData }) {
     <div>
       <Header />
       <Navibar />
-      <ArticleListLayout>
+      <div className="container mx-auto">
         <Head>…</Head>
         <section className={utilStyles.headingMd}>…</section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -32,7 +32,7 @@ export default function TechHome({ allPostsData }) {
             ))}
           </ul>
         </section>
-      </ArticleListLayout>
+      </div>
     </div>
   );
 }

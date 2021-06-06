@@ -13,8 +13,7 @@ export default function HobbyHome({ allPostsData }) {
     <div>
       <Header />
       <Navibar />
-      <ArticleListLayout>
-        <Head>…</Head>
+      <div className="container mx-auto">
         <section className={utilStyles.headingMd}>…</section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -32,7 +31,7 @@ export default function HobbyHome({ allPostsData }) {
             ))}
           </ul>
         </section>
-      </ArticleListLayout>
+      </div>
     </div>
   );
 }
