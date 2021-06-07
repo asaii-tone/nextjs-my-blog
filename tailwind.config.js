@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      "uirow-pink": "#e8aaa3",
+      "uiro-pink": "#e8aaa3",
+      "ice-ivory": "#f3deb9",
+      "japan-tea": "#aeac78",
+      "cocoa-form": "#ece4e1",
     },
   },
   variants: {
