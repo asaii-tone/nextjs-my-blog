@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navibar() {
   return (
-    <div>
+    <nav>
       <ul className="flex flex-nowrap justify-center grid gap-4 grid-cols-2">
         <li className="text-center">
           <Link href="/posts/tech">
@@ -15,6 +15,6 @@ export function Navibar() {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
