@@ -1,6 +1,6 @@
 import { format } from "date-fns";
 
-export default function dateFormat({ dateString }) {
+export default function DateFormat({ dateString }) {
   if (!dateString) {
     return null;
   }

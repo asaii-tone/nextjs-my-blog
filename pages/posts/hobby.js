@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import DateFormat from "../../components/date";
+import DateFormat from "../../components/DateFormat";
 import utilStyles from "../../styles/utils.module.css";
 import { getSortedHobbyPostsData } from "../../lib/posts";
-import Layout, { siteTitle } from "../../components/layout";
+import Layout, { siteTitle } from "../../components/Layout";
 import { Header } from "../../components/Header";
 import { Navibar } from "../../components/Navigation";
 import { ArticleListLayout } from "../../components/ArticleListLayout";
