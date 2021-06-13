@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import DateFormat from "../components/DateFormat";
 import { getSortedAllPostsData } from "../lib/posts";

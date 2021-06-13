@@ -1,13 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import DateFormat from "../../components/DateFormat";
-import Layout, { siteTitle } from "../../components/Layout";
 import utilStyles from "../../styles/utils.module.css";
 import { getSortedTechPostsData } from "../../lib/posts";
 import { Header } from "../../components/Header";
 import { Navibar } from "../../components/Navigation";
-import { ArticleListLayout } from "../../components/ArticleListLayout";
-
 export default function TechHome({ allPostsData }) {
   return (
     <div>
