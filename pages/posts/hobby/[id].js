@@ -1,15 +1,18 @@
 import Head from "next/head";
-import Layout from "../../../components/layout";
 import { getHobbyPostIds, getHobbyPostData } from "../../../lib/posts";
-import Date from "../../../components/date";
+import Date from "../../../components/DateFormat";
 import utilStyles from "../../../styles/utils.module.css";
+import { Header } from "../../../components/Header";
+import { Navibar } from "../../../components/Navigation";
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <main>
       <Head>
         <title>{postData.title}</title>
       </Head>
+      <Header />
+      <Navibar />
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
@@ -17,7 +20,7 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Layout>
+    </main>
   );
 }
 export async function getStaticPaths() {

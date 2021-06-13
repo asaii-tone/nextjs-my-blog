@@ -2,8 +2,13 @@ import Link from "next/link";
 
 export function Navibar() {
   return (
-    <div>
-      <ul className="flex flex-nowrap justify-center grid gap-4 grid-cols-2">
+    <nav>
+      <ul className="grid justify-center gap-4 grid-cols-3">
+        <li className="text-center">
+          <Link href="/">
+            <a className="hover:text-uiro-pink">Home</a>
+          </Link>
+        </li>
         <li className="text-center">
           <Link href="/posts/tech">
             <a className="hover:text-uiro-pink">TechBlog</a>
@@ -15,6 +20,6 @@ export function Navibar() {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
