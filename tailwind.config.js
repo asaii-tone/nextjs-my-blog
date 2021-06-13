@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        fit: "repeat(auto-fit, 24rem)",
+        fit: "repeat(auto-fit, 22rem)",
       },
       spacing: {
         68: "17rem",

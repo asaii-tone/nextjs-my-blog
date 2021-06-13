@@ -6,7 +6,7 @@ export const siteTitle = "Next.js Sample Website";
 
 export function Header() {
   return (
-    <header className="container max-w-full">
+    <header className="">
       <Head></Head>
       <div className="relative">
         <div
@@ -21,12 +21,20 @@ export function Header() {
               />
             </a>
           </Link>
-          <h1 className="">{name}</h1>
+          <div className="">
+            <h1 className="text-center flex-nowrap">
+              {name}
+              のブログです。
+            </h1>
+            <p className="text-center truncate">
+              プログラミング, 音楽, 釣り, ダイビングなど
+            </p>
+          </div>
         </div>
         <div>
           <img
             src="/images/header1-8-2.jpg"
-            className="block object-cover w-full h-80"
+            className="block object-cover w-full h-64"
             alt="profile_headerイメージ"
           />
         </div>
