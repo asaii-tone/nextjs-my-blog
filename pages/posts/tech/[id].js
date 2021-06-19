@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { getTechPostIds, getTechPostData } from "../../../lib/posts";
 import Date from "../../../components/DateFormat";
-import utilStyles from "../../../styles/utils.module.css";
 import { Header } from "../../../components/Header";
 import { Navibar } from "../../../components/Navigation";
 
@@ -14,8 +13,8 @@ export default function Post({ postData }) {
       <Header />
       <Navibar />
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <h1 className="text-5xl">{postData.title}</h1>
+        <div className="">
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
