@@ -17,7 +17,7 @@ export default function Home({ allPostsData }) {
         </h1>
         <ul className="grid grid-cols-fit content-around gap-12 justify-center">
           {/* 記事を表示する */}
-          {allPostsData.map(({ id, blogFlag, date, title }) => (
+          {allPostsData.map(({ id, blogFlag, date, title, image }) => (
             <div key={id} className="w-88">
               {blogFlag ? (
                 <Link href={`/posts/tech/${id}`}>
@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
                     <li className="w-88 hover:text-uiro-pink">
                       <img
                         className="object-contain w-88 h-64 align-top"
-                        src="/images/profile.jpg"
+                        src={image}
                         alt={id}
                       ></img>
                       <div className="w-88">
@@ -44,7 +44,7 @@ export default function Home({ allPostsData }) {
                     <li className="w-88 hover:text-uiro-pink">
                       <img
                         className="object-contain w-88 h-64"
-                        src="/images/sample.jpg"
+                        src={image}
                         alt={id}
                       ></img>
                       uu{title}

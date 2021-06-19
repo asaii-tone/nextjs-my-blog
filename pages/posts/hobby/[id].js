@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { getHobbyPostIds, getHobbyPostData } from "../../../lib/posts";
 import Date from "../../../components/DateFormat";
-import utilStyles from "../../../styles/utils.module.css";
 import { Header } from "../../../components/Header";
 import { Navibar } from "../../../components/Navigation";
 
@@ -13,9 +12,9 @@ export default function Post({ postData }) {
       </Head>
       <Header />
       <Navibar />
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+      <article className="">
+        <h1 className="">{postData.title}</h1>
+        <div className="">
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
