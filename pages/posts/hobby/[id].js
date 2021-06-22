@@ -3,23 +3,29 @@ import { getHobbyPostIds, getHobbyPostData } from "../../../lib/posts";
 import Date from "../../../components/DateFormat";
 import { Header } from "../../../components/Header";
 import { Navibar } from "../../../components/Navigation";
+import { FooterNav } from "../../../components/Footer";
 
 export default function Post({ postData }) {
   return (
-    <main>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
+    <div className="min-h-full bg-ice-ivory bg-opacity-50">
       <Header />
       <Navibar />
-      <article className="">
-        <h1 className="">{postData.title}</h1>
-        <div className="">
-          <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
-    </main>
+      <main>
+        <Head>
+          <title>{postData.title}</title>
+        </Head>
+        <article className="">
+          <h1 className="mt-4 mb-1 mx-0 text-2xl font-extrabold tracking-nomal">
+            {postData.title}
+          </h1>
+          <div className="mb-4">
+            <Date dateString={postData.date} />
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </article>
+      </main>
+      <FooterNav />
+    </div>
   );
 }
 export async function getStaticPaths() {
