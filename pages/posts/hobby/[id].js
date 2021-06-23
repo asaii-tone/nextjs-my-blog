@@ -7,14 +7,14 @@ import { FooterNav } from "../../../components/Footer";
 
 export default function Post({ postData }) {
   return (
-    <div className="min-h-full bg-ice-ivory bg-opacity-50">
+    <div className="min-h-screen bg-ice-ivory bg-opacity-50">
       <Header />
       <Navibar />
       <main>
         <Head>
           <title>{postData.title}</title>
         </Head>
-        <article className="">
+        <article className="block max-w-5xl mx-auto">
           <h1 className="mt-4 mb-1 mx-0 text-2xl font-extrabold tracking-nomal">
             {postData.title}
           </h1>

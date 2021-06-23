@@ -7,7 +7,7 @@ import { FooterNav } from "../components/Footer";
 
 export default function Home({ allPostsData }) {
   return (
-    <div className="bg-ice-ivory bg-opacity-50 min-w-88">
+    <div className="bg-ice-ivory bg-opacity-50 min-h-screen">
       <Header />
       <Navibar />
       <section className="">
