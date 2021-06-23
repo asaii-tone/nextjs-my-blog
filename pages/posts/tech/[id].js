@@ -7,18 +7,18 @@ import { FooterNav } from "../../../components/Footer";
 
 export default function Post({ postData }) {
   return (
-    <div className="bg-ice-ivory bg-opacity-50">
+    <div className="min-h-screen bg-ice-ivory bg-opacity-50">
       <Header />
       <Navibar />
       <main>
         <Head>
           <title>{postData.title}</title>
         </Head>
-        <article>
-          <h1 className="mt-4 mb-1 mx-0 text-2xl font-extrabold tracking-nomal">
+        <article className="block max-w-4xl mx-auto">
+          <h1 className="mt-4 mb-1 mx-0 text-2xl font-extrabold tracking-nomal text-center">
             {postData.title}
           </h1>
-          <div className="mb-4">
+          <div className="mb-4 text-center">
             <Date dateString={postData.date} />
           </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

@@ -7,7 +7,7 @@ import { Navibar } from "../../components/Navigation";
 import { FooterNav } from "../../components/Footer";
 export default function TechHome({ allPostsData }) {
   return (
-    <div className="bg-ice-ivory bg-opacity-50">
+    <div className="bg-ice-ivory bg-opacity-50 min-h-screen">
       <Header />
       <Navibar />
       <Head>…</Head>

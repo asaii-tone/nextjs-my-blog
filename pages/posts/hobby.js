@@ -7,7 +7,7 @@ import { FooterNav } from "../../components/Footer";
 
 export default function HobbyHome({ allPostsData }) {
   return (
-    <div className="bg-ice-ivory bg-opacity-50">
+    <div className="min-h-screen bg-ice-ivory bg-opacity-50">
       <Header />
       <Navibar />
       <section className="">
