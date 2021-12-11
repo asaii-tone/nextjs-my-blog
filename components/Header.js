@@ -7,7 +7,6 @@ export const siteTitle = "Next.js Sample Website";
 export function Header() {
   return (
     <header className="">
-      <Head></Head>
       <div className="relative">
         <div
           className={"flex flex-col items-center absolute left-0 right-0 z-10"}

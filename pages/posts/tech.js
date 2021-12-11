@@ -8,6 +8,9 @@ import { FooterNav } from "../../components/Footer";
 export default function TechHome({ allPostsData }) {
   return (
     <div className="bg-ice-ivory bg-opacity-50 min-h-screen">
+      <Head>
+        <title>TECH BLOG PAGE</title>
+      </Head>
       <Header />
       <Navibar />
       <Head>…</Head>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import DateFormat from "../../components/DateFormat";
 import { getSortedHobbyPostsData } from "../../lib/posts";
 import { Header } from "../../components/Header";
@@ -8,6 +9,9 @@ import { FooterNav } from "../../components/Footer";
 export default function HobbyHome({ allPostsData }) {
   return (
     <div className="min-h-screen bg-ice-ivory bg-opacity-50">
+      <Head>
+        <title>HOBBY BLOG PAGE</title>
+      </Head>
       <Header />
       <Navibar />
       <section className="">

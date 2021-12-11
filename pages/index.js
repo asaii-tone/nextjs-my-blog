@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import DateFormat from "../components/DateFormat";
 import { getSortedAllPostsData } from "../lib/posts";
 import { Navibar } from "../components/Navigation";
@@ -8,6 +9,9 @@ import { FooterNav } from "../components/Footer";
 export default function Home({ allPostsData }) {
   return (
     <div className="bg-ice-ivory bg-opacity-50 min-h-screen">
+      <Head>
+        <title>TOP PAGE</title>
+      </Head>
       <Header />
       <Navibar />
       <section className="">
