@@ -9,10 +9,10 @@ import { FooterNav } from "../../components/Footer";
 export default function HobbyHome({ allPostsData }) {
   return (
     <div className="min-h-screen bg-ice-ivory bg-opacity-50">
+      <Header />
       <Head>
         <title>HOBBY BLOG PAGE</title>
       </Head>
-      <Header />
       <Navibar />
       <section className="">
         <br />

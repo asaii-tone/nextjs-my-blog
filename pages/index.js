@@ -9,11 +9,11 @@ import { FooterNav } from "../components/Footer";
 export default function Home({ allPostsData }) {
   return (
     <div className="bg-ice-ivory bg-opacity-50 min-h-screen">
+      <Header />
+      <Navibar />
       <Head>
         <title>TOP PAGE</title>
       </Head>
-      <Header />
-      <Navibar />
       <section className="">
         <br />
         <h1 className="font-sans text-3xl truncate text-center">
